@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Aplikasi Membuat Denah Rumah 2d
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Aplikasi Membuat Denah Rumah 2d",
+  "datePublished": "2021-08-07",
+  "image": "https://www.centerklik.com/wp-content/uploads/2019/11/Roomle-software-denah-rumah.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Desain Rumah Modern",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=aplikasi+membuat+denah+rumah+2d",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Aplikasi Membuat Denah Rumah 2d
+            </a>
+        </h1>
+        <p>
+                            Gambar Rumah impian. Kumpulan Gambar Desain rumah modern dan minimalis.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Aplikasi Membuat Denah Rumah 2d</strong>. Aplikasi ini juga mendukung tampilan 2D atau 3D di dalamnya. Tidak ada batasan ukuran rumah di aplikasi ini.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2021/02/Play-Store-Home-Design-3D.jpg" alt="12 Aplikasi Desain Rumah Untuk Hp Android Tokopedia Blog" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAvfpvWi2zlxiNXHzIjIKffYCDyN3CYb37JA';">
+        <figcaption>12 Aplikasi Desain Rumah Untuk Hp Android Tokopedia Blog from www.tokopedia.com</figcaption>
+    </figure>
+        <p>
+        SketchUp dapat digunakan untuk membuat rancangan rumah dalam bentuk 2D dan 3D. Sweet Home 3D adalah software desain denah interior rumah gratis yang dibangun untuk membantu arsitek dan desainer interior membuat denah rumah dan mengatur furnitur secara lebih efektif. DreamPlan menyediakan beragam template yang bisa digunakan dengan mudah bahkan bagi mereka yang baru pertama kali mendesain rumah.
+    </p>
+    <h3>Software ini memiliki navigasi yang mudah digunakan bahkan untuk pemula sekalipun.</h3>
+    <p>Aplikasi yang dirilis pada tahun 2000 ini menyediakan banyak pilihan material tumbuhan furniture dan berbagai keperluan bangunan lainnya. SketchUp dapat digunakan untuk membuat rancangan rumah dalam bentuk 2D dan 3D. Aplikasi membuat denah rumah yang direkomendasikan selanjutnya kini adalah Planner 5D. Aplikasi ini adalah aplikasi versi terbaru dari aplikasi Live Interior 3D sehingga Anda dapat merancang rumah secara 2D.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Cara Menggunakan Aplikasi Planner 5d Untuk Membuat Desain Rumah Sederhana Isi Dompet Online" src="https://1.bp.blogspot.com/-uWmFBF6WDOI/YDttdRRDmLI/AAAAAAAAHpo/MbOHvdIzGvQZZwNkQ4dyGWNu0EbU55V2wCLcBGAsYHQ/s610/Cara%2BMenggunakan%2BAplikasi%2BPlanner%2B5D%2BUntuk%2BMembuat%2BDesain%2BRumah.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwuPs6dFqRhvPtD19JoXqS3lDcAtqNKmf-4g';" />
+        <small>Source: www.isidompet.online</small>
+                    <p>Save atau dengan menekan CtrlS beri nama Denah Rumah-layer tertentu pada denah hingga terbentuk seperti gambar di bawah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Android Terbaik Saat Ini 2020 10terbaik Com Tekno" src="https://2.bp.blogspot.com/-0odTAJORBz0/WEH0ioA9QXI/AAAAAAAAA_E/YbkZBbQUyRA0Bw1lxizmTCJtwus3trxBwCLcB/s1600/floor%2Bplan%2Bcreator.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRILPa96p7l77S4eN9NY-wwYF2mPwCt_5Wgtw';" />
+        <small>Source: tekno.10terbaik.com</small>
+                    <p>Simpel dan mudah digunakan jika kamu tidak ingin meluangkan banyak waktu hanya untuk belajar menggunakan sebuah aplikasi desain rumah maka Floorplanner layak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqzgm5syppdrqeyuqqaozlrjpresicrgszqle2zypirrrpyahtc Usqp Cau" src="/search?q=aplikasi+desain+rumah+android&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=aplikasi+desain+rumah+android&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Salah satu aplikasi yang popular dan sering digunakan untuk menggambar desain rumah dalam bentuk 2D ataupun 3D dan paling mudah serta simple adalah Google Sketchup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="18 Cara Membuat Denah Rumah Sederhana Secara Mudah Arisiteki" src="https://www.arsiteki.com/wp-content/uploads/2020/03/Contoh-Denah-Ruangan.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6rn4Oca7PYb9whjbbOymSCFdsXI9Pmyo_cw';" />
+        <small>Source: www.arsiteki.com</small>
+                    <p>Tidak ada batasan ukuran rumah di aplikasi ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Software Desain Denah Rumah Gratis Terbaik Centerklik" src="https://www.centerklik.com/wp-content/uploads/2019/11/floorplanner-software-denah-rumah.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQVLm77jk9SnUhWzWIbPFDY1gND_WWiRpCWeZlcRhFqjZvAl1OgUYhKCPCYYlYnJnA8J0';" />
+        <small>Source: www.centerklik.com</small>
+                    <p>Mendesain melalui aplikasi ini sangat mudah dan akurat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Denah Rumah Dengan Autocad Youtube" src="https://i.ytimg.com/vi/Mqhh_Yh2rJw/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt_HG_xJHsQwYm83W154cJB_VqscxrFUP3wQ';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Anda dapat membuat menyesuaikan warna dan mengoptimalkan pengaturan furnitur Anda untuk menghasilkan desain yang lebih nyata.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="18 Cara Membuat Denah Rumah Sederhana Secara Mudah Arisiteki" src="https://www.arsiteki.com/wp-content/uploads/2020/03/Cara-Membuat-Denah-Rumah.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5E6X1GnzfxpwjpowzmGLaP5ClDBi5p9EW6A';" />
+        <small>Source: www.arsiteki.com</small>
+                    <p>Untuk Anda yang ingin mendownload DreamPlan bisa di sini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Denah Rumah Dengan Coreldraw Tutorial Coreldraw Youtube" src="https://i.ytimg.com/vi/BAZ6fDL9MP4/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4x4J7touCS1L61P-nzulpBk-ClGIG8x8kMQ';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Anda dapat membuat menyesuaikan warna dan mengoptimalkan pengaturan furnitur Anda untuk menghasilkan desain yang lebih nyata.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Android Dengan Fitur Lengkap Dan Gratis Jalantikus Com Line Today" src="https://obs.line-scdn.net/0hxTNLylf3J3tzNQoh9ThYLEljJBRAWTR4FwN2ZSNbeU8NBzUkHFc4FVBicBhZUGAlGlBgGlI9PEpXA2h-TFY4/w644" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2-9ki0haNpdoNoOXKUjtpB-PJcP86-gjLIQ';" />
+        <small>Source: today.line.me</small>
+                    <p>Salah satu aplikasi yang popular dan sering digunakan untuk menggambar desain rumah dalam bentuk 2D ataupun 3D dan paling mudah serta simple adalah Google Sketchup.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/harga-membangun-rumah-minimalis.html"><i>&larr; harga membangun rumah minimalis</i></a>
+                                                                    
+                                        <a href="/hiasan-pintu-rumah-minimalis.html"><i>hiasan pintu rumah minimalis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
